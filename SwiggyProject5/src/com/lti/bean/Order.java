@@ -47,8 +47,8 @@ public class Order {
 		System.out.println("Your order ID "+orderid );
 		System.out.println("List of order \n"+product.display());
 		System.out.println("Quantity "+quantity);
-		bill = product.getPrice()*quantity;
-		System.out.println("Payable Bill is Rs. "+bill);
+		bill = (product.getPrice()*quantity)+((product.getPrice()*quantity)*0.18);
+		System.out.println("Payable Bill with GST is Rs. "+bill);
 		
 	}
 
